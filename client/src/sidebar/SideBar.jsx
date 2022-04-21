@@ -11,7 +11,7 @@ import React from "react";
 import HomeIcon from '@mui/icons-material/Home';
 
 
-export default function SideBar() {
+export default function SideBar({mode,setMode}) {
   return (
     <Box 
     flex={1} p={2} 
@@ -23,31 +23,7 @@ export default function SideBar() {
               <ListItemIcon>
                 <HomeIcon/>
               </ListItemIcon>
-              <ListItemText primary="Inbox" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
-                <Article />
-              </ListItemIcon>
-              <ListItemText primary="Pages" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
-                <Group />
-              </ListItemIcon>
-              <ListItemText primary="Groups" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
-                <Storefront />
-              </ListItemIcon>
-              <ListItemText primary="Marketplace" />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -79,8 +55,7 @@ export default function SideBar() {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              {/* <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/> */}
-              <Switch/>
+              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
           </List>

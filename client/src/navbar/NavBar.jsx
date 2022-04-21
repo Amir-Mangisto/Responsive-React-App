@@ -50,9 +50,9 @@ const Navbar = () => {
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           MangoApp
         </Typography>
-        <Pets sx={{ display: { xs: "block", sm: "none" } }} />
-        <Search>
-          <InputBase placeholder="search..." />
+        <Pets sx={{ display: { xs: "block", sm: "none" } }} color="black" />
+        <Search bgcolor={"background.default"} color={"text.primary"}>
+          <InputBase placeholder="search..."   />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
