@@ -80,6 +80,7 @@ export default function SideBar() {
                 <ModeNight />
               </ListItemIcon>
               {/* <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/> */}
+              <Switch/>
             </ListItemButton>
           </ListItem>
           </List>
